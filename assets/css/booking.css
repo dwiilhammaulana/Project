@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('/assets/img/hero-carousel/2.png') no-repeat center center fixed; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.flight-search-form {
+    background: rgba(1, 1, 1, 0.422); /* Dark transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.166);
+    width: 80%;
+    max-width: 900px;
+    color: white; /* Ensure text is readable on dark background */
+}
+
+.trip-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.trip-options label {
+    margin: 0 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.trip-options input[type="radio"] {
+    display: none;
+}
+
+.trip-options input[type="radio"] + label {
+    background: #444444;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+.trip-options input[type="radio"]:checked + label {
+    background: #007bff;
+    color: white;
+}
+
+.miles-button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.miles-button:hover {
+    background: #0056b3;
+}
+
+.search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input, .input-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus, .input-group select:focus {
+    border-color: #007bff;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: rgb(160, 195, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: center;
+    transition: background 0.3s;
+}
+
+.search-button:hover {
+    background: #ffffff;
+}
+
+
+
+

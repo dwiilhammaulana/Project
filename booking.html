@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Search Form</title>
+    <link rel="stylesheet" href="./assets/css/booking.css">
+    <style>
+        body {
+            background-image: url('./assets/img/hero-carousel/2.png');
+            background-size: cover; /* Menyesuaikan gambar dengan ukuran layar */
+            background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+            background-position: center; /* Memposisikan gambar di tengah */
+        }
+    </style>
+</head>
+<body>
+    <div><audio id="audio" loop>
+        <source src="ilklan.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    <script>
+        document.getElementById('playButton').addEventListener('click', function() {
+          var audio = document.getElementById('audio');
+          audio.play().catch(function(error) {
+            console.log('Audio playback was prevented:', error);
+          });
+        });
+      </script>
+      </div>
+    
+    <div class="flight-search-form">
+        <div class="trip-options">
+            <input type="radio" id="one-way" name="trip" value="one-way">
+            <label for="one-way">Sekali Jalan</label>
+            <input type="radio" id="round-trip" name="trip" value="round-trip" checked>
+            <label for="round-trip">Pergi Pulang</label>
+            <input type="radio" id="multi-city" name="trip" value="multi-city">
+            <label for="multi-city">Multi Kota</label>
+            <button class="miles-button">Tukarkan GarudaMiles</button>
+        </div>
+        <div class="search-bar">
+            <div class="input-group">
+                <label for="from">Dari</label>
+                <input type="text" id="from" placeholder="Kota keberangkatan">
+            </div>
+            <div class="input-group">
+                <label for="to">Ke</label>
+                <input type="text" id="to" placeholder="Kota tujuan">
+            </div>
+            <div class="input-group">
+                <label for="depart">Pergi</label>
+                <input type="date" id="depart">
+            </div>
+            <div class="input-group">
+                <label for="return">Pulang</label>
+                <input type="date" id="return">
+            </div>
+            <div class="input-group">
+                <label for="passengers">Penumpang</label>
+                <input type="number" id="passengers" min="1" value="1">
+                <select id="class">
+                    <option value="economy">Economy</option>
+                    <option value="business">Business</option>
+                    <option value="first">First</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="promo">Kode Promo</label>
+                <input type="text" id="promo" placeholder="Kode Promo">
+            </div>
+            <!-- <button class="search-button">Cari</button> -->
+        </div>
+        <a href="./index.html"><button class="search-button">Done</button></a>
+    </div>
+</body>
+</body>
+</html>
